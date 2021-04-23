@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Book List Project</title>
+    <link rel="stylesheet" href="Style/all.min.css">
+    <link rel="stylesheet" href="Style/fontawesome.min.css">
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+    <!-- Pop up -->
+    <!-- <div class="popup">
+        <div class="min-pop">
+            <i id="close" class="fas fa-times-circle"></i>
+            <h1>Sorry you didn't mention anything! <i class="far fa-frown-open"></i></h1>
+        </div>
+    </div> -->
+    <!-- up -->
+    <section id="contenr">
+        <div class="title">
+            <h1><i class="fa fa-book-open"></i>My favorite <span>book</span></h1>
+        </div>
+        <form action="">
+        <div class="book-text">
+            <label>Title</label>
+            <input type="text" id="input-title">
+        </div>
+        <div class="author-text">
+            <label>Author</label>
+            <input type="text" id="input-author">
+        </div>
+        <div class="year-text">
+            <label>Year</label>
+            <input type="number" id="input-year">
+        </div>
+        <div class="submit">
+            <input type="submit" value="Add book" class="btn-book">
+        </div>
+    </form>
+    <div class="table-div"></div>
+    <table class="table-class">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    </section>
+
+    <script type="text/javascript" src="Script/app.js"></script>
+
+</body>
+</html>
