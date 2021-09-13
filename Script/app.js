@@ -7,14 +7,14 @@ const add = document.querySelector("#tbody");
 btn.addEventListener("click", function(e){
     e.preventDefault()
     if(title.value == "" && author.value == "" && year.value == ""){
-        // const close = document.getElementById("close");
-        // const popep = document.querySelector(".popup")
-        
-        // close.addEventListener("click",function(){
-        //     popep.setAttribute("style", "opacity: 10;")
-        // })
         alert("Sorry you didn't mention anything!")
-    }else{
+    }else if(title.value == ""){
+        alert("Plese manthon your book name")
+    }else if(author.value = ""){
+        alert("Plese mathon your book athor name.")
+    }else if(year.value = "")
+        alert("Plese mathon your favrat book reles year.")
+    else{
         // New Title
         const newRow = document.createElement("tr");
 
@@ -34,4 +34,10 @@ btn.addEventListener("click", function(e){
 
         add.appendChild(newRow)
     }
+
+    title.value = "";
+    year.value = "";
+    author.value = "";
+
+
 })
