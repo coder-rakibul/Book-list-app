@@ -4,24 +4,24 @@ const year = document.querySelector("#input-year");
 const btn = document.querySelector(".btn-book");
 const add = document.querySelector("#tbody");
 
+
 btn.addEventListener("click", function(e){
     e.preventDefault()
     if(title.value == "" && author.value == "" && year.value == ""){
         alert("Sorry you didn't mention anything!")
-    }else if(title.value == ""){
-        alert("Plese manthon your book name")
-    }else if(author.value = ""){
-        alert("Plese mathon your book athor name.")
-    }else if(year.value = "")
-        alert("Plese mathon your favrat book reles year.")
-    else{
+    }else if(title.value == "") {
+        alert("Plese manthon book title 🛰️");
+    }else if(author.value == ""){
+        alert("Plese manthon book author name. 👨‍🔧");
+    }else if(year.value == ""){
+        alert("Plese manthon year 👓");
+    }else{
         // New Title
         const newRow = document.createElement("tr");
 
         const newTitle = document.createElement("th");
         newTitle.innerHTML = title.value;
         newRow.appendChild(newTitle);
-
         // New author
         const newAuthor = document.createElement("th");
         newAuthor.innerHTML = author.value;
@@ -36,8 +36,8 @@ btn.addEventListener("click", function(e){
     }
 
     title.value = "";
-    year.value = "";
     author.value = "";
+    year.value = "";
 
 
 })
