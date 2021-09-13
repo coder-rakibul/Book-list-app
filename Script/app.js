@@ -12,8 +12,9 @@ btn.addEventListener("click", function (e) {
         alert("Plese manthon your book name")
     } else if (author.value = "") {
         alert("Plese mathon your book athor name.")
-    } else if (year.value = "")
+    } else if (year.value = ""){
         alert("Plese mathon your favrat book reles year")
+    }
     else {
         // New Title
         const newRow = document.createElement("tr");
